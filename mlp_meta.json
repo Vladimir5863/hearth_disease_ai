@@ -1,0 +1,104 @@
+{
+  "target": "HeartDisease",
+  "numeric_columns": [
+    "BMI",
+    "PhysicalHealth",
+    "MentalHealth",
+    "SleepTime"
+  ],
+  "categorical_columns": [
+    "Smoking",
+    "AlcoholDrinking",
+    "Stroke",
+    "DiffWalking",
+    "Sex",
+    "AgeCategory",
+    "Race",
+    "Diabetic",
+    "PhysicalActivity",
+    "GenHealth",
+    "Asthma",
+    "KidneyDisease",
+    "SkinCancer"
+  ],
+  "categorical_choices": {
+    "Smoking": [
+      "No",
+      "Yes"
+    ],
+    "AlcoholDrinking": [
+      "No",
+      "Yes"
+    ],
+    "Stroke": [
+      "No",
+      "Yes"
+    ],
+    "DiffWalking": [
+      "No",
+      "Yes"
+    ],
+    "Sex": [
+      "Female",
+      "Male"
+    ],
+    "AgeCategory": [
+      "18-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45-49",
+      "50-54",
+      "55-59",
+      "60-64",
+      "65-69",
+      "70-74",
+      "75-79",
+      "80 or older"
+    ],
+    "Race": [
+      "American Indian/Alaskan Native",
+      "Asian",
+      "Black",
+      "Hispanic",
+      "Other",
+      "White"
+    ],
+    "Diabetic": [
+      "No",
+      "No, borderline diabetes",
+      "Yes",
+      "Yes (during pregnancy)"
+    ],
+    "PhysicalActivity": [
+      "No",
+      "Yes"
+    ],
+    "GenHealth": [
+      "Excellent",
+      "Fair",
+      "Good",
+      "Poor",
+      "Very good"
+    ],
+    "Asthma": [
+      "No",
+      "Yes"
+    ],
+    "KidneyDisease": [
+      "No",
+      "Yes"
+    ],
+    "SkinCancer": [
+      "No",
+      "Yes"
+    ]
+  },
+  "positive_class": "Yes",
+  "target_mapping": {
+    "No": 0,
+    "Yes": 1
+  },
+  "model_path": "mlp_model.pkl"
+}

@@ -4,10 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-<<<<<<< HEAD
 dependencies = [
+    "seaborn>=0.13.2",
     "pandas>=2.3.2",
+    "scikit-learn>=1.7.1",
+    "streamlit>=1.49.1",
 ]
-=======
-dependencies = []
->>>>>>> 6619f73b003e18e4c9f5e1a246f26e563716b46c
