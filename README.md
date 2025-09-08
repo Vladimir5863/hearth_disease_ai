@@ -25,6 +25,9 @@ This project uses the Heart Disease Health Indicators dataset to train an MLP cl
   - scikit-learn >= 1.7.1
   - streamlit >= 1.49.1
   - seaborn >= 0.13.2
+  - ipykernel >= 6.30.1
+  - matplotlib >= 3.10.6
+  - xgboost >= 2.0.0
 
 ## 🛠️ Installation
 
