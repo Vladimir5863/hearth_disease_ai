@@ -33,7 +33,7 @@ This project uses **[uv](https://github.com/astral-sh/uv)** - an extremely fast 
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/Vladimir5863/hearth_disease_ai>
    cd ai-projekat
    ```
 
@@ -144,9 +144,36 @@ The web app provides:
 2. **Categorical Features**: One-hot encoding with unknown category handling
 3. **Target Encoding**: "Yes"/"No" → 1/0
 
-## 🎯 Performance
+## 🎯 Performance & Evaluation
 
-The model's performance is evaluated using ROC-AUC score on the test set. The exact performance will be displayed when running the training script.
+The model's performance is comprehensively evaluated using multiple metrics to ensure robust assessment across different aspects of binary classification.
+
+### 📊 Evaluation Metrics
+
+**Classification Metrics:**
+- **Accuracy**: Overall correctness of predictions
+- **Balanced Accuracy**: Accuracy adjusted for class imbalance
+- **Precision (Macro/Weighted)**: Positive prediction accuracy
+- **Recall (Macro/Weighted)**: True positive detection rate
+- **F1-Score (Macro/Weighted)**: Harmonic mean of precision and recall
+
+**Probabilistic Metrics:**
+- **ROC-AUC**: Area under the Receiver Operating Characteristic curve
+- **PR-AUC**: Area under the Precision-Recall curve (Average Precision)
+
+**Additional Analysis:**
+- **Classification Report**: Detailed per-class performance breakdown
+- **Confusion Matrix**: True vs predicted label distribution
+- **ROC Curve**: True Positive Rate vs False Positive Rate visualization
+- **Precision-Recall Curve**: Precision vs Recall trade-off visualization
+
+🏆 Model Selection
+Model Selection Rationale: After comprehensive comparison of multiple algorithms in the jupyter_notebook branch (XGBoost, Linear SVM, Logistic Regression, MLP), the MLP neural network was selected as the final model due to its superior performance across multiple evaluation metrics, particularly:
+
+Highest overall accuracy and balanced accuracy
+Best ROC-AUC score indicating strong discriminative ability
+Optimal precision-recall trade-off for heart disease prediction
+Robust performance on both macro and weighted averages
 
 ## 🔮 Making Predictions
 
