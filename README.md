@@ -61,6 +61,28 @@ This project uses **[uv](https://github.com/astral-sh/uv)** - an extremely fast 
 4. **Ensure you have the dataset**
    - Place `heart_2020_cleaned.csv` in the project root directory
 
+## 🟦 Balanced dataset (class balancing)
+
+Due to class imbalance in `HeartDisease`, the repo supports creating a balanced dataset that models can train on.
+
+- Balanced file name: `heart_2020_balanced.csv`
+- How it’s created: in `notebook_analysis.ipynb`, a function `balance_classes_and_save` is provided.
+- Default strategy: oversampling (keeps dataset size large by upsampling the minority class to the majority size)
+- Switch strategy: pass `strategy='undersample'` to reduce dataset size (downsample majority).
+
+Steps to generate/update the balanced CSV:
+1. Open `notebook_analysis.ipynb`
+2. Run the cell titled “Balance classes and save a new CSV”
+3. This saves `heart_2020_balanced.csv` in the project root
+
+Model notebooks are configured to use the balanced CSV:
+- `notebook_logreg.ipynb`
+- `notebook_mlp.ipynb`
+- `notebook_svm.ipynb`
+- `notebook_xgboost.ipynb`
+
+If you prefer training on the original (imbalanced) dataset, change the respective `pd.read_csv("heart_2020_balanced.csv")` lines back to `heart_2020_cleaned.csv`.
+
 ## 🔍 Exploring Additional Analysis
 
 To access the comprehensive analysis and model comparison notebooks:

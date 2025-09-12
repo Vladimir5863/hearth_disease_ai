@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 
 
-DATA_PATH = "heart_2020_cleaned.csv"
+DATA_PATH = "heart_2020_balanced.csv"
 TARGET_COL = "HeartDisease"
 MODEL_PATH = "mlp_model.pkl"
 META_PATH = "mlp_meta.json"
